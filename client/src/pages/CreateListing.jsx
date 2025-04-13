@@ -159,6 +159,7 @@ export default function CreateListing() {
   };
   return (
     <main className='p-3 max-w-4xl mx-auto '>
+      <div className='border border-gray-300 rounded-lg p-2 shadow-md mt-48'>
       <h1 className='text-3xl font-semibold text-center my-7  mt-32'>
         Create a Listing
       </h1>
@@ -370,6 +371,7 @@ export default function CreateListing() {
           {error && <p className='text-red-700 text-sm'>{error}</p>}
         </div>
       </form>
+      </div>
     </main>
   );
 }

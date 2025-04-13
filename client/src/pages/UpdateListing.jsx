@@ -103,7 +103,7 @@ export default function CreateListing() {
   };
 
   return (
-    <main className="p-6 max-w-4xl mx-auto bg-white shadow-md rounded-lg">
+    <main className="p-6 max-w-4xl mx-auto bg-gray-800 shadow-md rounded-lg">
       <h1 className="text-3xl font-semibold text-center my-7 text-gray-800">
         Update a Listing
       </h1>
