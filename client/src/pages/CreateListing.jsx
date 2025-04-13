@@ -34,7 +34,7 @@ export default function CreateListing() {
   console.log(formData);
   const handleImageSubmit = (e) => {
     const fetchListing = async()=>{
-    const res = await fetch("/api/listing/get/${params.listingId}");
+    const res = await fetch("/api/listings/get/${params.listingId}");
     }
     if (files.length > 0 && files.length + formData.imageUrls.length < 7) {
       setUploading(true);
@@ -151,7 +151,7 @@ export default function CreateListing() {
         setError(data.message);
       }
       console.log(data);
-      navigate(`/listings/${data._id}`);
+      navigate(`/listing/${data._id}`);
     } catch (error) {
       setError(error.message);
       setLoading(false);
